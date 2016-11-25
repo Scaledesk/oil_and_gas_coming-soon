@@ -233,7 +233,7 @@ a {
   color: #FFFFFF;
 }
 a:hover {
-  color: #00af94;
+  color: #f6a326;
   text-decoration: none !important;
   outline: none !important;
 }
@@ -434,7 +434,7 @@ sup {
   left: 0;
   height: 100%;
   overflow: visible;
-  background: rgba(45, 49, 56, 0.4);
+  background: rgba(45, 49, 56, 0.77);
   width: 100%;
   z-index: 0;
 }
@@ -839,11 +839,11 @@ sup {
 
 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-  background: #2fffe0;
+  background: #f6a326;
 }
 
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-  background: #2fffe0;
+  background: #f6a326;
 }
 
 .mCSB_scrollTools {
@@ -1050,10 +1050,10 @@ sup {
   overflow: hidden;
   background: url(../img/background-newsletter.jpg) center;
   background-size: cover;
-  border-top: 10px solid #FFFFFF;
-  border-right: 10px solid #FFFFFF;
-  border-bottom: 10px solid #16ffdc;
-  border-left: 10px solid #16ffdc;
+  border-top: 10px solid #f6a326;
+  border-right: 10px solid #f6a326;
+  border-bottom: 10px solid #f6a326;
+  border-left: 10px solid #f6a326;
 }
 .dialog__content::before {
   content: " ";
@@ -1187,7 +1187,7 @@ sup {
   width: auto;
 }
 #subscribe #notifyMe .form-group button.submit:hover {
-  background: #00af94;
+  background: #f6a326;
   color: #FFFFFF;
 }
 #subscribe .block-message {
@@ -1454,7 +1454,7 @@ sup {
   width: auto;
 }
 #contact-form button#valid-form:hover {
-  background: #00af94;
+  background: #f6a326;
   color: #FFFFFF;
 }
 
