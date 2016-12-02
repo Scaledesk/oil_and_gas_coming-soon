@@ -70,7 +70,7 @@
                   <form method="post" class="home-form">  
                       <input type="email" id="email" class="form form-control email-custom" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" name="email-address" data-name="Email Address" required="">
                     
-                    <button type="submit" class="btn btn-custom trigger text-intro animated-middle fadeInUp" > < Get in Touch</button>
+                    <button type="submit" class="btn btn-custom trigger text-intro animated-middle fadeInUp" > &lt; Get in Touch</button>
                       
                       </form>
 
@@ -80,7 +80,11 @@
 								<a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">More Informations</a>
 							</li>
 							<li>
-								<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0"><i class="fa fa-play-circle-o"></i> &nbsp;Watch the Video</a>
+                                <br>
+<!--								<a data-dialog="somedialog" class="m-t-10"><i class="fa fa-play-circle-o"></i> &nbsp;Watch the Video</a>-->
+								<a data-toggle="modal" data-target="#myModal" class="m-t-10"><i class="fa fa-play-circle-o"></i> &nbsp;Watch the Video</a>
+                                
+                                
 							</li>
 						</ul>
                         
@@ -418,7 +422,7 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 <!--				<div class="dialog-inner">-->
                 <div>
                     
-<!--                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_BnelpyIBIA" frameborder="0" allowfullscreen></iframe>-->
+<!--                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_BnelpyIBIA" frameborder="0" allowfullscreen autoplay="0"></iframe>-->
 
 <!--
 					<h4>You like taking the lead of line?</h4>
@@ -545,6 +549,28 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 		    </div>
 
 		</div>
+        
+        <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_BnelpyIBIA" frameborder="0" allowfullscreen autoplay="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-custom" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+        
 		<!-- END - Root element of PhotoSwipe, the gallery. Must have class pswp. -->
 
 		<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
