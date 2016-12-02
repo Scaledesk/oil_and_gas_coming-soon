@@ -1679,6 +1679,30 @@ canvas#canvasbg {
   margin-bottom: 10px !important;
 }
 
+
+/*custom button */
+.email-custom{
+    width: auto;
+    display: inline-block;
+}
+
+.home-form{
+    margin-bottom: 30px;
+}
+
+.btn-custom{
+    background: #f6a326;
+}
+
+/*Popup box changes*/
+
+.dialog__content{
+    max-width: none;
+    width: auto;
+}
+
+
+
 /* ------------------------------------- */
 /* 8. Media Queries .................... */
 /* ------------------------------------- */
@@ -1851,6 +1875,31 @@ canvas#canvasbg {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+    
+    /*    Custom Button */
+    .email-custom{
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.home-form{
+    margin-bottom: 30px;
+     text-align: center;
+     text-align: -webkit-center;
+}
+    
+    .home-form input{
+        padding: 20px; 
+        font-size: large;
+    }
+
+.btn-custom{
+    background: #f6a326;
+    width: 50%;
+}
+
+    
   .light-btn {
     max-width: 70%;
     min-width: 60%;
@@ -1884,6 +1933,32 @@ canvas#canvasbg {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+    
+/*    Custom Button */
+    .email-custom{
+    width: 80%;
+    display: block;
+        text-align: center;
+}
+
+.home-form{
+    margin-bottom: 30px;
+    text-align: center;
+    text-align: -webkit-center;
+}
+    
+ .home-form input{
+        padding: 20px; 
+        font-size: large;
+    }
+
+.btn-custom{
+    background: #f6a326;
+    padding: 10px;
+    width: 50%; 
+}
+
+    
   #home {
     padding: 5rem 0 0;
   }

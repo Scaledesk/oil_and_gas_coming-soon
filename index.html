@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
         <title>Energy Dias</title>
-        <meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="description" content="Energy Dais - Be where Companies are">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Madeon08">
+        <meta name="author" content="Scaledesk Web Studio">
 
         <!-- ================= Favicon ================== -->
         <!-- Standard -->
@@ -63,6 +63,13 @@
 
 					<p class="text-intro opacity-0">Perfect and awesome template to present your future product or service.<br>
 						Hooking audience attention is all in the opener.</p>
+                    
+                  <form method="post" class="home-form">  
+                      <input type="email" id="email" class="form form-control email-custom" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" name="email-address" data-name="Email Address" required="">
+                    
+                    <button type="submit" class="btn btn-custom trigger text-intro animated-middle fadeInUp" > < Get in Touch</button>
+                      
+                      </form>
 
 					<nav>
 						<ul>
@@ -70,12 +77,17 @@
 								<a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">More Informations</a>
 							</li>
 							<li>
-								<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">Notify Me!</a>
+								<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0"><i class="fa fa-play-circle-o"></i> &nbsp;Watch the Video</a>
 							</li>
 						</ul>
+                        
 					</nav>
+                    
+                  
 
 				</div>
+                
+                
 				<!-- END - Content -->
 
 				<!-- START - Bottom home -->
@@ -385,28 +397,33 @@
 			<div class="dialog__content">
 
 				<!-- START - dialog-inner -->
-				<div class="dialog-inner">
+<!--				<div class="dialog-inner">-->
+                <div>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_BnelpyIBIA" frameborder="0" allowfullscreen></iframe>
 
+<!--
 					<h4>You like taking the lead of line?</h4>
 
 					<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+-->
 
 					<!-- START - Newsletter Form -->
 					<div id="subscribe">
 
-		                <form action="php/notify-me.php" id="notifyMe" method="POST">
+		             <!--    <form action="php/notify-me.php" id="notifyMe" method="POST">
 
 		                    <div class="form-group">
 
 		                        <div class="controls">
 
-		                        	<!-- Field  -->
+		                        	
 		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
 
-		                        	<!-- Spinner top left during the submission -->
+		                        	
 		                        	<i class="fa fa-spinner opacity-0"></i>
 
-		                            <!-- Button -->
+		                           
 		                            <button class="btn btn-lg submit">Get notified</button>
 
 		                            <div class="clear"></div>
@@ -415,7 +432,7 @@
 
 		                    </div>
 
-		                </form>
+		                </form>  -->
 
 						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
 						<div class="block-message">
