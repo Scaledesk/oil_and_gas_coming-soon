@@ -9,13 +9,18 @@ $mail1 = new PHPMailer;
        
        post_data = {'userName':user_name, 'userEmail':user_email, 'userSubject':user_subject, 'userMessage':user_message};
 */       
-$email=$_POST['userEmail'];
+$Useremail=$_POST['userEmail'];
 $userMessage=$_POST['userMessage'];
 $name=$_POST['userName'];
-$subject=$_POST['userSubject'];
+$userSubject=$_POST['userSubject'];
 /*$emailadmin="sanchit2411@gmail.com";
 */
 $emailadmin="info@energydais.com";
+
+//$emailadmin="sanchit2411@gmail.com";
+
+//$emailadmin="nkscoder@gmail.com";
+
 
 /*$emailadmin2="priyanka@scaledesk.com";
 */$namefrom=$_POST['pagefrom'];
@@ -24,7 +29,7 @@ $subject = "Energy Dais";
 $messageUsers=file_get_contents('template.html');
 $message ='<html>
 <body>
-<div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br> Email:-'.$email.'<br>Phone:-'.$subject.'<br>Message:-'.$userMessage.'</div>
+<div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br> Email:-'.$Useremail.'<br>Subject:-'.$userSubject.'<br>Message:-'.$userMessage.'</div>
 </body>
 </html>';
 
@@ -72,7 +77,7 @@ $mail1->setFrom('info@energydais.com', 'Energy Dais');
 
 
 //$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
-$mail->addAddress($email, $name);     // Add a recipient
+$mail->addAddress($Useremail, $name);     // Add a recipient
 
 //$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail1->addAddress($emailadmin);     // Add a recipient
