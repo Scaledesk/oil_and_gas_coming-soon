@@ -15,7 +15,7 @@ $name=$_POST['userName'];
 $subject=$_POST['userSubject'];
 /*$emailadmin="sanchit2411@gmail.com";
 */
-$emailadmin="nkscoder@gmail.com";
+$emailadmin="info@energydais.com";
 
 /*$emailadmin2="priyanka@scaledesk.com";
 */$namefrom=$_POST['pagefrom'];
@@ -39,15 +39,15 @@ $mail->IsHTML(true);  */
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'contact@scaledesk.com';                 // SMTP username
-$mail->Password = 'qazplmq1w2e3r4';                           // SMTP password
+$mail->Username = 'info@energydais.com';                 // SMTP username
+$mail->Password = 'Ganesha101';                           // SMTP password
 //$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;// TCP port to connect to
 $mail->IsHTML(true);
 
-$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
+$mail->setFrom('info@energydais.com', 'Energy Dais');
 //$mail->addAddress('ellen@example.com');               // Name is optional
-$mail->addReplyTo('contact@scaledesk.com', 'noreply');
+$mail->addReplyTo('info@energydais.com', 'noreply');
 // TCP port to connect to
 /*$mail1->isSMTP();                                      // Set mailer to use SMTP
 $mail1->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
@@ -62,13 +62,13 @@ $mail1->IsHTML(true);
 $mail1->isSMTP();                                      // Set mailer to use SMTP
 $mail1->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail1->SMTPAuth = true;                               // Enable SMTP authentication
-$mail1->Username = 'contact@scaledesk.com';                 // SMTP username
-$mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
+$mail1->Username = 'info@energydais.com';                 // SMTP username
+$mail1->Password = 'Ganesha101';                           // SMTP password
 //$mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail1->Port = 587;// TCP port to connect to
 $mail1->IsHTML(true);
 
-$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
+$mail1->setFrom('info@energydais.com', 'Energy Dais');
 
 
 //$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
