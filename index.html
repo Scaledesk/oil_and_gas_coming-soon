@@ -189,10 +189,10 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
 
 							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
-							<a class="box-picture" href="img/gallery-1.jpg" itemprop="contentUrl" data-size="1920x1280">
+							<a class="box-picture" href="img/gallerynew/gallery-1.jpg" itemprop="contentUrl" data-size="1920x1280">
 
 								<!-- Your picture -->
-								<img src="img/gallery-1.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								<img src="img/gallerynew/gallery-1.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
 								<p>Open</p>
 
 							</a>
@@ -219,11 +219,11 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
 
 							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
-							<a class="box-picture" href="img/gallery-2.jpg" itemprop="contentUrl" data-size="1920x1280">
+							<a class="box-picture" href="img/gallerynew/gallery-2.jpg" itemprop="contentUrl" data-size="1920x1280">
 
 								<!-- Your picture -->
-								<img src="img/gallery-2.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
-								<p>Voir</p>
+								<img src="img/gallerynew/gallery-2.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								<p>Open</p>
 
 							</a>
 
@@ -251,16 +251,18 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
 
 							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
-							<a class="box-picture" href="img/gallery-3.jpg" itemprop="contentUrl" data-size="1920x1280">
+							<a class="box-picture" href="img/gallerynew/gallery-3.jpg" itemprop="contentUrl" data-size="1920x1280">
 
 								<!-- Your picture -->
-								<img src="img/gallery-3.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								<img src="img/gallerynew/gallery-3.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+<!--
 								<span class="widget-angle-bottom-left">
 									<span class="icon-text">
 										<i class="icon ion-ios-star"></i>
 									</span>
 								</span>
-								<p>Ansicht</p>
+-->
+								<p>Open</p>
 
 							</a>
 
@@ -287,16 +289,18 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
 
 							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
-							<a class="box-picture" href="img/gallery-4.jpg" itemprop="contentUrl" data-size="1920x1280">
+							<a class="box-picture" href="img/gallerynew/gallery-4.jpg" itemprop="contentUrl" data-size="1920x1280">
 
 								<!-- Your picture -->
-								<img src="img/gallery-4.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								<img src="img/gallerynew/gallery-4.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+<!--
 								<span class="widget-angle-top-right">
 									<span class="icon-text">
 										<i class="icon ion-ios-star"></i>
 									</span>
 								</span>
-								<p>Vista</p>
+-->
+								<p>Open</p>
 
 							</a>
 
@@ -564,7 +568,7 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 -->
       <div class="modal-body">
 <!--       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_BnelpyIBIA" frameborder="0" allowfullscreen autoplay="0"></iframe>-->
-          <iframe id="yt-player" src="https://player.vimeo.com/video/194056994" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/194056994" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-custom" data-dismiss="modal">Close</button>
@@ -614,25 +618,7 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 		<script src="js/constellation.js"></script>
 
 		<!-- Countdown plugin -->
-		<script src="js/jquery.countdown.js"></script>
-        
-<!--
-        <script>
-          
-       $("#myModal .fade").live("click", function() {
-             alert("this");
-      $("#myModal iframe").attr("src", jQuery("#myModal iframe").attr("src"));
-});
-        </script>
--->
-        
-        <script>
-         $('#myModal').on('hidden.bs.modal', function () {
-//        callPlayer('yt-player', 'stopVideo');
-              $("#myModal iframe").attr("src", jQuery("#myModal iframe").attr("src"));
-            
-    });
-        </script>
+        <script src="js/jquery.countdown.js"></script>
 
 		<script>
 		$("#getting-started")
@@ -643,6 +629,14 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 				);
 		});
 		</script>
+        
+         <script>
+         $('#myModal').on('hidden.bs.modal', function () {
+//        callPlayer('yt-player', 'stopVideo');
+              $("#myModal iframe").attr("src", jQuery("#myModal iframe").attr("src"));
+            
+    });
+        </script>
 
 		<!-- Main JS File -->
 		<script src="js/main.js"></script>
