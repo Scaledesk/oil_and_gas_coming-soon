@@ -20,7 +20,7 @@ $emailadmin="info@energydais.com";
 /*$emailadmin2="priyanka@scaledesk.com";
 */$namefrom=$_POST['pagefrom'];
 
-$subject = "Coming soon";
+$subject = "Energy Dais";
 $messageUsers=file_get_contents('template.html');
 $message ='<html>
 <body>
