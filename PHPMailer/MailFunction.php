@@ -90,7 +90,16 @@ $mail->Body    = $messageUsers;
 $mail1->Subject = $subject;
 $mail1->Body    = $message;
 
+ 
+  /* if($_POST["email"]){
 
+        echo json_encode(array(
+            "status" => "success"
+          ));
+
+   }
+   
+*/
     // Checking if the $_POST vars well provided, Exit if there is one missing
     if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userSubject"]) || !isset($_POST["userMessage"])) {
         

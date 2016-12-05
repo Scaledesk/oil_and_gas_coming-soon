@@ -67,13 +67,13 @@
 <br>
 						</p>
                     
-                  <form method="post" class="home-form">  
-                      <input type="email" id="email" class="form form-control email-custom" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" name="email-address" data-name="Email Address" required="">
+                  <form method="POST" class="home-form" id="home-form" action="">  
+                      <input type="email" id="email1" class="form form-control email-custom" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" name="email1" data-name="Email Address" required="">
                     
                     <button type="submit" class="btn btn-custom trigger text-intro animated-middle fadeInUp" > &lt; Get in Touch</button>
                       
                       </form>
-
+                     <div  id="homeresult" class="homeresult"></div>
 					<nav>
 						<ul>
 							<li>
@@ -642,6 +642,14 @@ We are a talented group of professionals from the requisite backgrounds, cutting
 		<script src="js/main.js"></script>
 
 		<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+
+ <script type="text/javascript">
+setTimeout(function() {
+    $('#homeresult').fadeOut('fast');
+}, 3500); 
+        </script> 
+
 
 	</body>
 

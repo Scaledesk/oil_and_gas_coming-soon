@@ -9,6 +9,7 @@
         var i = e(this).find("input[name=email]");
         var s = e(this).attr("action");
         var o = e(this).find(".note");
+       /* alert(i);*/
         e(this).on("submit", function(t) {
             t.preventDefault();
             var h = i.val();
@@ -18,6 +19,8 @@
                 $(".message").hide().html('').fadeIn();
                 $(".fa-spinner").addClass("fa-spin").removeClass("opacity-0");
                 o.show();
+               /* alert(h);
+                cosole.log(h);*/
                 e.ajax({
                     type: "POST",
                     url: s,
@@ -37,7 +40,11 @@
                     }
                 }).done(function(e) {
                     o.hide();
+                     cosole.log(e);
                     if (e.status == "success") {
+
+                         
+
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                         $(".message").removeClass("bad-email").addClass("success-full");
                         $(".block-message").addClass("show-block-valid").removeClass("show-block-error");

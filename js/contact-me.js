@@ -46,3 +46,56 @@ $(document).ready(function() {
     });
    
 });
+
+
+
+
+
+
+$(document).ready(function() {
+
+    $("#home-form [type='submit']").click(function(e) {
+        e.preventDefault();
+        
+        // Get input field values of the contact form
+       
+        var user_email  = $('input[name=email1]').val();
+      
+  
+
+                /*  alert(user_email);*/
+
+
+        // Datadata to be sent to server
+        post_data = {'userEmail':user_email};
+       
+        // Ajax post data to server
+        $.post('PHPMailer/notifyMe.php', post_data, function(response){  
+           
+            // Load json data from server and output message    
+            if(response.type == 'error') {
+
+                output = '<div class="error-message"><p>'+response.text+'</p></div>';
+                
+            } else {
+                     
+                        $(".homeresult").html('<p class="notify-valid" style="color: #08791c;">Congrats! You are in list.<br>We will inform you as soon as we finish.</p>').fadeIn();
+                      
+
+                      setTimeout(function() {
+    $('#homeresult').fadeOut('fast');
+}, 3500); 
+            }
+           
+            $("#answer").hide().html(output).fadeIn();
+
+        }, 'json');
+
+    });
+   
+    // Reset and hide all messages on .keyup()
+    $("#contact-form input, #contact-form textarea").keyup(function() {
+        $("#answer").fadeOut();
+    });
+   
+});
