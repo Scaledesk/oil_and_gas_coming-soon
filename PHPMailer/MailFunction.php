@@ -90,6 +90,57 @@ $mail->Body    = $messageUsers;
 $mail1->Subject = $subject;
 $mail1->Body    = $message;
 
+
+    // Checking if the $_POST vars well provided, Exit if there is one missing
+    if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userSubject"]) || !isset($_POST["userMessage"])) {
+        
+        $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> Input fields are empty!'));
+        die($output);
+    }
+   
+    // PHP validation for the fields required
+    if(empty($_POST["userName"])) {
+        $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> We are sorry but your name is too short or not specified.'));
+        die($output);
+    }
+    
+    if(!filter_var($_POST["userEmail"], FILTER_VALIDATE_EMAIL)) {
+        $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> Please enter a valid email address.'));
+        die($output);
+    }
+
+    // To avoid the spammy bots, you can change the value of the minimum characters required. Here it's <20
+    if(strlen($_POST["userMessage"])<20) {
+        $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> Too short message! Take your time and write a few words.'));
+        die($output);
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if(!$mail1->send()) {
     $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> Oops! Looks like something went wrong, please check your PHP mail configuration.'));
         die($output);
