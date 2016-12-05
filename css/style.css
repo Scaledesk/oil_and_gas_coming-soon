@@ -1723,9 +1723,11 @@ canvas#canvasbg {
   margin-bottom: 10px;  
 }
 
+/*
 .homeresult p {
   color: orange;
 }
+*/
 
 #myModal{
     background: rgba(0,0,0,0.65);
@@ -1737,6 +1739,14 @@ canvas#canvasbg {
 
 .f-400{
     font-weight: 400 !important;
+}
+
+.notify-invalid{
+    color: crimson !important;
+}
+
+.notify-valid{
+    color: crimson !important;
 }
 
 

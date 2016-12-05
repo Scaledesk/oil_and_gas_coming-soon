@@ -80,7 +80,7 @@ $(document).ready(function() {
 
                               $('#home-form')[0].reset();
                               
-                        $(".homeresult").html('<p class="notify-valid" style="color: #08791c;">Congrats! You are in list.We will inform you as soon as we finish.</p>').fadeIn();
+                        $(".homeresult").html('<p class="notify-valid" style="color: #00ff5e; font-weight: 700;">Congrats! Thanks for showing interest. We will update you about the progress.</p>').fadeIn();
                                               
 
                                               setTimeout(function() {
@@ -97,7 +97,7 @@ $(document).ready(function() {
 
    
    }else{
-                                   $(".homeresult").html('<p class="notify-valid">Your e-mail address is incorrect.</p>').fadeIn();
+                                   $(".homeresult").html('<p class="notify-invalid style="color:#ff5353; font-weight:700;">Please enter a valid email address.</p>').fadeIn();
                                               
                                         
                                               setTimeout(function() {
