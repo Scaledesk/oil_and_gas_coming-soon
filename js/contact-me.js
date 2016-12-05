@@ -58,44 +58,65 @@ $(document).ready(function() {
         e.preventDefault();
         
         // Get input field values of the contact form
-       
+        
         var user_email  = $('input[name=email1]').val();
       
-  
+       var p = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              if (p.test(user_email)) {
 
-                /*  alert(user_email);*/
-
-
-        // Datadata to be sent to server
+                 $("#homeloader").show() ;   
+              
         post_data = {'userEmail':user_email};
        
-        // Ajax post data to server
+        
         $.post('PHPMailer/notifyMe.php', post_data, function(response){  
-           
-            // Load json data from server and output message    
+   
             if(response.type == 'error') {
 
                 output = '<div class="error-message"><p>'+response.text+'</p></div>';
                 
             } else {
-                     
-                        $(".homeresult").html('<p class="notify-valid" style="color: #08791c;">Congrats! You are in list.<br>We will inform you as soon as we finish.</p>').fadeIn();
-                      
+                           $("#homeloader").hide() ;  
 
-                      setTimeout(function() {
-    $('#homeresult').fadeOut('fast');
-}, 3500); 
-            }
+                        $(".homeresult").html('<p class="notify-valid" style="color: #08791c;">Congrats! You are in list.We will inform you as soon as we finish.</p>').fadeIn();
+                                              
+
+                                              setTimeout(function() {
+                            $('#homeresult').fadeOut('fast');
+                        }, 3500); 
+              }
+
+
+
            
             $("#answer").hide().html(output).fadeIn();
 
         }, 'json');
 
-    });
    
+   }else{
+                                   $(".homeresult").html('<p class="notify-valid">Your e-mail address is incorrect.</p>').fadeIn();
+                                              
+                                        
+                                              setTimeout(function() {
+                            $('#homeresult').fadeOut('fast');
+                        }, 3500); 
+
+
+   }
+     
+
+
+    });
+    
+
     // Reset and hide all messages on .keyup()
     $("#contact-form input, #contact-form textarea").keyup(function() {
         $("#answer").fadeOut();
     });
    
 });
+
+
+
+$("#homeloader").hide() ;  

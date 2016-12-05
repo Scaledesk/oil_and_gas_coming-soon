@@ -6,11 +6,11 @@ $mail1 = new PHPMailer;
 
 
 $Useremail=$_POST["userEmail"];
-//$emailadmin="info@energydais.com";
+$emailadmin="info@energydais.com";
 
 
 
-$emailadmin="nkscoder@gmail.com";
+//$emailadmin="nkscoder@gmail.com";
 
 $namefrom=$_POST['pagefrom'];
 
