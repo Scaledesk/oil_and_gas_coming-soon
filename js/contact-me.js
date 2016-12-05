@@ -76,8 +76,10 @@ $(document).ready(function() {
                 output = '<div class="error-message"><p>'+response.text+'</p></div>';
                 
             } else {
-                           $("#homeloader").hide() ;  
+                           $("#homeloader").hide() ;
 
+                              $('#home-form')[0].reset();
+                              
                         $(".homeresult").html('<p class="notify-valid" style="color: #08791c;">Congrats! You are in list.We will inform you as soon as we finish.</p>').fadeIn();
                                               
 
