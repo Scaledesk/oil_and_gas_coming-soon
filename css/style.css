@@ -1710,11 +1710,12 @@ canvas#canvasbg {
 }
 
 .modal-body {
-    height: 60vh;
+    height: 70vh;
 }
 
 .modal-content{
     border-radius: 3px;
+    background: rgba(0,0,0,0);
 }
 
 .homeresult
