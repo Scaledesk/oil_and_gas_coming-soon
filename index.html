@@ -653,7 +653,31 @@ We are a talented group of professionals from the requisite backgrounds, cutting
  <script type="text/javascript">
 
         </script> 
+<script>
+    $(function(){
+    $('#myModal').modal({
+        show: false
+    }).on('hidden.bs.modal', function(){
+        $(this).find('video')[0].pause();
+    });
+});
 
+//$('.close, .save, .cancel').on('click', function(e){
+//    e.preventDefault();
+//    var $this = $(this);
+//    // get identifier modal window.
+//    var modal = $this.data('custom');
+//
+//   $('#myModal').modal('hide');
+//  // check tag html5 for video and audio.
+//   if (($('#myModal').prop("tagName") == 'AUDIO') 
+//   || ($('#myModal').prop("tagName") == 'VIDEO')) {
+//       if (!$('#el-myModal').get(0).paused) {
+//              $('#el-myModal')[0].pause();
+//       }
+//   }
+//});        
+</script>
 
 	</body>
 
